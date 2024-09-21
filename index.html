@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            background:radial-gradient(circle,rgb(130, 170, 226)
+             0%,rgb(248, 0, 4)100%);
+            
+        }
+        .heading{
+            text-align: center;
+        }
+        .form-container{
+            background-color: #f4f4f4;
+            width: 450px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            text-align: center;
+            margin: auto;
+            padding: 20px;
+        }
+        .input-feild{
+            width: 100%;
+            padding: 10px;
+            border-radius:5px;
+            margin-left: 1px;
+            background-color: #f4f4f4;
+            margin-bottom: 15px;
+
+        }
+        label{
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        .text-area{
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+        .rating{
+            margin-bottom: 15px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+        }
+        span{
+            color: red;
+            font-weight: bold;
+        }
+        .terms{
+            text-align: left;
+
+        }
+        .terms label{
+            display: inline;
+        }
+        button{
+            background-color: rgb(44, 197, 44);
+            padding: 7px;
+            font-weight: bold;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="heading">Feedback Form</h2>
+    </div>
+
+    <!-- Form body -->
+     <div class="form-container">
+        <form>
+            <!-- Feedback Tpye -->
+             <label>Feedback Type:</label>
+             <select class="input-feild">
+                <option>Compliment</option>
+                <option>Excellent</option>
+                <option>Averagw</option>
+             </select>
+
+             <!-- Message -->
+              <label>Message:</label>
+              <textarea class="text-area"></textarea>
+
+              <!-- Website Rating -->
+              
+              
+                <label>Website Rating:</label>
+                <div class="rating">
+                    <input type="radio" id="rating-excellent" name="website-rating" value="excellent">
+                    <label for="rating-excellent">Excellent</label>
+                    <input type="radio" id="rating-good" name="website-rating" value="good">
+                    <label for="rating-good">Good</label>
+                    <input type="radio" id="rating-average" name="website-rating" value="average">
+                    <label for="rating-average">Average</label>
+                    <input type="radio" id="rating-poor" name="website-rating" value="poor">
+                    <label for="rating-poor">Poor</label>
+              </div>
+
+              <!-- Age -->
+
+              <label>Age(10-100):</label>
+              <input class="input-feild" type="number"/>
+
+              <!-- Email -->
+              <label>Email<span>*</span>:</label>
+              <input class="input-feild" type="email"/>
+ 
+              <!-- Password -->
+              <label>Password (min. 8 chacters):</label>
+              <input class="input-feild" type="text"/>
+
+              <!-- Website-->
+              <label>Website URL (optional):</label>
+              <input class="input-feild" type="number"/>
+
+              <!-- Terms and condition-->
+
+              <div class="terms">
+                <input type="checkbox"/>
+                <label>I agree to the terms and conditions</label>
+
+                
+
+              </div>
+              <!-- Sumbit button -->
+              <button type>
+                Submit
+             </button>
+
+
+
+              </form>
+     </div>
+
+
+    
+</body>
+</html>
